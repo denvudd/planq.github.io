@@ -1,0 +1,163 @@
+.solution {
+  padding-top: 390px;
+
+  &__inner {
+    margin-top: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 40px;
+  }
+
+  &-text {
+    max-width: 370px;
+    width: 100%;
+  }
+
+  &-point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__text {
+      max-width: 370px;
+      width: 100%;
+      font-size: 15px;
+    }
+
+    &__bull {
+      margin-right: 24px;
+
+      img {
+        max-width: 12px;
+        width: 100%;
+        max-height: 12px;
+        height: 100%;
+      }
+    }
+  }
+
+  &-panel {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+
+    &__button {
+      border: 1px solid #000000;
+      color: #000000;
+    }
+  }
+
+  &-mobile-panel {
+    display: none;
+
+    &__button {
+      border: 1px solid #000000;
+      color: #000000;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .solution {
+    padding-top: 216px;
+  }
+
+  .solution__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 41px;
+  }
+
+  .solution-text {
+    order: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .solution-point__text {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .solution-diagram {
+    order: 1;
+    display: flex;
+    margin: 86px auto 0px auto;
+  }
+
+  .solution-mobile-panel { 
+    display: flex;
+    margin: 51px auto 0px auto;
+    order: 2;
+  }
+
+  .solution-panel {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .solution {
+    padding-top: 171px;
+
+    &__title {
+      font-size: 23px;
+    }
+
+    &-diagram {
+      object {
+        max-width: 80%;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .solution {
+    padding-top: 137px;
+
+    &__title {
+      font-size: 23px;
+    }
+  }
+
+  .solution-diagram {
+    object {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .solution {
+    padding-top: 105px;
+
+    &__title {
+      font-size: 21px;
+    }
+
+    &-point__text {
+      font-size: 13px;
+    }
+
+    &-diagram {
+      margin-top: 47px;
+    }
+
+    &-mobile-panel__button {
+      font-size: 13px;
+      padding: 11px 30px;
+    }
+  }
+}

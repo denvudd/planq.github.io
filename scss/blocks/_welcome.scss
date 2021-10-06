@@ -49,6 +49,17 @@
       &__link {
         margin-right: 61px;
       }
+
+      &__button {
+        &:hover {
+          color: #000000;
+        }
+
+        &:before {
+          background: #FFFFFF;
+
+        }
+      }
     }
   }
 }

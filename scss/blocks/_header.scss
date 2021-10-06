@@ -6,6 +6,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &-pin {
@@ -50,6 +51,14 @@
       font-size: 13px;
       line-height: 12px;
       color: #000000;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__link-active {
+      color: #C8BB93;
     }
   }
 }
