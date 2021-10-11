@@ -1,0 +1,42 @@
+.details {
+  padding-top: 154px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 106px;
+  }
+
+  &-photo {
+    margin-right: 270px;
+  }  
+
+  &-points {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-item {
+    display: flex;
+    max-width: 570px;
+    width: 100%;
+    margin-bottom: 59px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__icon {
+      max-width: 40px;
+      width: 100px;
+      max-height: 40px;
+      height: 100%;
+      margin-right: 50px;
+    }
+
+    &__text {
+      font-size: 15px;
+    }
+  }
+}

@@ -25,11 +25,11 @@
         </div>
         <nav class="header-nav">
           <ul class="header-nav__list">
-            <li class="header-nav__li"><a href="#" class="header-nav__link">Продукты</a></li>
+            <li class="header-nav__li"><a href="products.html" class="header-nav__link">Продукты</a></li>
             <li class="header-nav__li"><a href="app.html"
                 class="header-nav__link header-nav__link-active">Приложение</a></li>
             <li class="header-nav__li"><a href="#" class="header-nav__link">Дистрибуция</a></li>
-            <li class="header-nav__li"><a href="#" class="header-nav__link">Где купить</a></li>
+            <li class="header-nav__li"><a href="plonq.html" class="header-nav__link">Где купить</a></li>
           </ul>
         </nav>
         <div class="burger-menu">
@@ -330,8 +330,8 @@
     var svgLocation = document.getElementById("solution-diagram", "problem-diagram__svg").getBoundingClientRect();
     var offsetToTriggerAnimation = svgLocation.y + svgLocation.height;
 
-    const solutionDiagram = new Vivus('solution-diagram');
-    const problemDiagram = new Vivus('problem-diagram__svg');
+    const solutionDiagram = new Vivus('solution-diagram', {duration: 100});
+    const problemDiagram = new Vivus('problem-diagram__svg', {duration: 100});
     solutionDiagram.play(function scrollAnimTriggerCheck(evt) {
       var viewBottom = window.scrollY + window.innerHeight;
 

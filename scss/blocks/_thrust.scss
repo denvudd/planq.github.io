@@ -1,0 +1,90 @@
+.thrust {
+  padding-top: 184px;
+  background: #000000;
+
+  &-text {
+    max-width: 480px;
+    width: 100%;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 100px;
+    margin-left: 24px;
+    font-weight: 300;
+  }
+
+  &-diagram {
+    margin-top: -140px;
+    margin-right: 330px;
+    display: flex;
+    justify-content: flex-end;
+
+    &--mobile {
+      display: none;
+    }
+
+    object {
+      max-width: 35%;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .thrust {
+    &-text {
+      margin-top: 82px;
+    }
+
+    &-diagram {
+      margin-right: 180px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .thrust {
+    padding-top: 72px;
+
+    &-text {
+      margin-top: 50px;
+      font-size: 15px;
+    }
+
+    &-diagram {
+      margin-top: -90px;
+      object {
+        max-width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .thrust {
+    &-diagram {
+      margin-top: -60px;
+      margin-right: 60px;
+      object {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .thrust-diagram {
+    display: none;
+  }
+
+  .thrust-diagram--mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .thrust-text {
+    font-size: 13px;
+    margin-top: 57px;
+    margin-left: 0;
+  }
+}

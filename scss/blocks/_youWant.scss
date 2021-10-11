@@ -1,0 +1,151 @@
+.youWant {
+  padding-top: 240px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-title {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    &--mobile {
+      display: none;
+      text-align: center;
+      font-size: 23px;
+      text-transform: uppercase;
+    }
+  }
+
+  &-img {
+    max-width: 120px;
+    width: 100%;
+  }
+
+  &-points {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-item {
+    display: flex;
+    max-width: 442px;
+    width: 100%;
+    margin-bottom: 69px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__icon {
+      max-width: 35px;
+      width: 100%;
+      margin-right: 79px;
+    }
+
+    &__text {
+
+      &__title {
+        font-size: 23px;
+      }
+
+      &__p {
+        font-size: 15px;
+        margin-top: 23px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .youWant {
+    padding-top: 47px;
+
+    &-title {
+      display: none;
+
+      &--mobile {
+        display: block;
+      }
+    }
+
+    &__inner {
+      margin-top: 72px;
+      justify-content: center;
+    }
+
+    &-img {
+      margin-right: 184px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .youWant {
+    &-img {
+      margin-right: 84px;
+    }
+
+    &-item {
+      max-width: 341px;
+      &__icon {
+        margin-right: 32px;
+      }
+
+      &__text {
+        &__title {
+          font-size: 18px;
+        }
+
+        &__p {
+          font-size: 15px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .youWant {
+    padding-top: 72px;
+    &-title {
+      &--mobile {
+        font-size: 18px;
+      }
+    }
+
+    &__inner {
+      align-items: flex-start;
+      margin-top: 46px;
+    }
+
+    &-img {
+      margin-right: 58px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      max-width: 228px;
+      margin-bottom: 40px;
+
+      &__text {
+        &__title {
+          font-size: 14px;
+          font-weight: 700;
+          margin-top: 10px;
+          line-height: 1.2;
+        }
+
+        &__p {
+          margin-top: 10px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

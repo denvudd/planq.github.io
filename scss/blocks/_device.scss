@@ -1,0 +1,174 @@
+.device {
+  padding-top: 250px;
+
+  &--intro {
+    padding-top: 160px;
+  }
+
+  &--plonq500 {
+    background: #F9F9F9;
+    padding-bottom: 244px;
+    margin-top: 192px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--row {
+      flex-direction: row;
+    }
+
+    &--row-reverse {
+      flex-direction: row-reverse;
+
+      .device-text {
+        margin-right: 0;
+        margin-left: 320px; // margin in row-reverse
+      }
+    }
+  }
+
+  &-text {
+    max-width: 344px;
+    width: 100%;
+    margin-right: 216px; // margin in default row
+
+    &__title {
+      font-size: 40px;
+      line-height: 1.1;
+    }
+
+    &__p {
+      margin-top: 28px;
+      font-size: 15px;
+
+      p {
+        &:first-child {
+          font-weight: 500;
+        }
+
+        padding-block-end: 0.5em;
+        padding-block-start: 0.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .device {
+    padding-top: 207px;
+
+    &--intro {
+      padding-top: 103px;
+    }
+
+    &--plonq500 {
+      padding-top: 126px;
+      padding-bottom: 127px;
+      margin-top: 136px;
+    }
+
+    &__inner {
+      &--row-reverse {
+        .device-text {
+          margin-left: 96px;
+        }
+      }
+    }
+
+    &-text {
+      max-width: 50%;
+      width: 100%;
+      margin-right: 102px;
+
+      &__title {
+        font-size: 21px;
+      }
+
+      &__p {
+        font-size: 15px;
+      }
+    }
+
+    &-photo {
+      max-width: 50%;
+      width: 100%;
+
+      img {
+        max-width: 60%;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .device {
+    padding-top: 110px;
+
+    &--intro {
+      padding-top: 45px;
+    }
+
+    &--plonq500 {
+      padding-top: 76px;
+      padding-bottom: 92px;
+      margin-top: 146px;
+    }
+
+    &__inner {
+      flex-direction: column;
+
+      &--row-reverse {
+        flex-direction: column;
+
+        .device-text {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &-text {
+      max-width: 100%;
+      margin-right: 0;
+
+      &__title {
+        font-size: 21px;
+      }
+
+      &__p {
+        margin-top: 25px;
+      }
+    }
+
+    &-photo {
+      margin-top: 36px;
+      max-width: 60%;
+      
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .device {
+    &--plonq500 {
+      .device-photo {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+
+    &-text {
+      &__title {
+        font-size: 16px;
+      }
+
+      &__p {
+        font-size: 13px;
+      }
+    }
+  }
+}

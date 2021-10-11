@@ -16,8 +16,13 @@
 @import 'blocks/goods';
 @import 'blocks/more';
 
-
-
+/* PLONQ / WHERE CAN I BUY */
+@import 'blocks/standard';
+@import 'blocks/youWant';
+@import 'blocks/design';
+@import 'blocks/thrust';
+@import 'blocks/steam';
+@import 'blocks/details';
 
 /* APP */
 @import 'blocks/problem';
@@ -25,6 +30,12 @@
 @import 'blocks/therapist';
 @import 'blocks/howItWorks';
 @import 'blocks/update';
+
+
+/* PRODUCT */
+@import 'blocks/device';
+@import 'blocks/fluid';
+@import 'blocks/certificates';
 
 /* Footer */
 @import 'blocks/footer';
