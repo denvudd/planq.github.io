@@ -23,6 +23,11 @@
 @import 'blocks/thrust';
 @import 'blocks/steam';
 @import 'blocks/details';
+@import 'blocks/safety';
+@import 'blocks/tastes';
+@import 'blocks/quality';
+@import 'blocks/feature';
+@import 'blocks/locations';
 
 /* APP */
 @import 'blocks/problem';
@@ -36,6 +41,10 @@
 @import 'blocks/device';
 @import 'blocks/fluid';
 @import 'blocks/certificates';
+
+
+/* PLONQ 400 OUT OF STORE */
+@import 'blocks/plonq400';
 
 /* Footer */
 @import 'blocks/footer';

@@ -1,0 +1,63 @@
+.plonq400 {
+  padding-top: 362px;
+  padding-bottom: 173px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-text {
+    max-width: 400px;
+    width: 100%;
+
+    &__p {
+      font-size: 32px;
+      margin-top: 58px;
+    }
+
+    &__link {
+      margin-top: 58px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .plonq400 {
+    padding-top: 145px;
+    padding-bottom: 219px;
+    &__inner {
+      flex-direction: column;
+    }
+
+    &-text {
+      &__logo {
+        display: flex;
+        justify-content: center;
+      }
+
+      &__p {
+        text-align: center;
+        margin-top: 21px;
+        font-size: 23px;
+      }
+
+      &__link {
+        display: flex;
+        justify-content: center;
+        margin-top: 21px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .plonq400 {
+    padding-top: 77px;
+    padding-bottom: 81px;
+    &-photo {
+      margin-top: 21px;
+    }
+  }
+}
