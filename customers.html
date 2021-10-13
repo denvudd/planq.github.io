@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PLONQ 400</title>
+  <title>PLONQ - Customers</title>
   <link rel="stylesheet" href="css/style.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
@@ -24,7 +24,7 @@
           <ul class="header-nav__list">
             <li class="header-nav__li"><a href="products.html" class="header-nav__link">Продукты</a></li>
             <li class="header-nav__li"><a href="app.html" class="header-nav__link">Приложение</a></li>
-            <li class="header-nav__li"><a href="contacs.html" class="header-nav__link">Дистрибуция</a></li>
+            <li class="header-nav__li"><a href="#" class="header-nav__link header-nav__link-active">Дистрибуция</a></li>
             <li class="header-nav__li"><a href="plonq.html" class="header-nav__link">Где купить</a></li>
           </ul>
         </nav>
@@ -44,28 +44,86 @@
     </div>
   </header>
   <main class="main">
-    <section class="plonq400">
+    <section class="support-header">
       <div class="container">
-        <div class="plonq400__inner">
-          <div class="plonq400-text">
-            <div class="plonq400-text__logo">
-              <img src="img/plonq400/logo_Plonq_400.png" alt="">
+        <div class="support-header__inner">
+          <nav class="support-header__nav">
+            <ul class="support-header__list">
+              <li class="support-header__li"><a href="contacs.html" class="support-header__link">Связаться с нами</a>
+              </li>
+              <li class="support-header__li"><a href="customers.html"
+                  class="support-header__link support-header__link--active">Оптовым покупателям</a></li>
+              <li class="support-header__li"><a href="#" class="support-header__link">Условия возврата</a></li>
+              <li class="support-header__li"><a href="#" class="support-header__link">О компании</a></li>
+              <li class="support-header__li"><a href="#" class="support-header__link">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="customers">
+      <div class="container">
+        <div class="customers__inner">
+          <div class="customers-text">
+            <div class="customers-text__title">
+              <h1>Условия работы
+                с оптовыми покупателями</h1>
             </div>
-            <div class="plonq400-text__p">
-              <p>Продукт снят с производства</p>
-            </div>
-            <div class="plonq400-text__link">
-              <a class="primary--link" href="plonq.html">Перейти на Plonq 500
-                <img src="img/svg/arrow-black.svg" alt=""></a>
+            <ul class="customers-text__list">
+              <li class="customers-text__li">Минимальный заказ для Plonq от 20 000 рублей.</li>
+              <li class="customers-text__li">Отправка осуществляется после 100% предоплаты по безналичному расчету.</li>
+              <li class="customers-text__li">Доставка оптовых заказов производится транспортными компаниями из Москвы по
+                всей России.</li>
+              <li class="customers-text__li">Вся поставляемая продукция сертифицирована, при поставке предоставляются
+                копии сертификатов соответствия, качества продукции, также полный пакет документов.</li>
+            </ul>
+            <div class="customers-text__p">
+              <p>Для получения оптового прайс-листа, или другой информации
+                по сотрудничеству, вышлите запрос и краткое описание
+                Вашей организации на адрес: opt@plonq.ru </p>
+              <p>Связаться с оптовым отделом Вы можете
+                по Тел.: +7 495 125-19-91 в рабочие дни с 10 до 18 часов
+                или через форму обратной связи: </p>
             </div>
           </div>
-          <div class="plonq400-photo">
-            <picture>
-              <source srcset="img/plonq400/colors2-1--mobile.png" media="(max-width: 576px)">
-              <source srcset="img/plonq400/colors2-1.png">
-              <img src="img/plonq400/colors2-1.png" alt="">
-            </picture>
-          </div>
+          <form action="#" class="contacts-form">
+            <div class="contacts-form__item">
+              <div class="contacts-form__item__title">
+                <p>Ваше ФИО</p>
+              </div>
+              <div class="contacts-form__item__input">
+                <input type="text" placeholder="Иван Петров">
+              </div>
+            </div>
+            <div class="contacts-form__item">
+              <div class="contacts-form__item__title">
+                <p>Номер телефона</p>
+              </div>
+              <div class="contacts-form__item__input">
+                <input type="tel" placeholder="+7 999 999-99-99">
+              </div>
+            </div>
+            <div class="contacts-form__item">
+              <div class="contacts-form__item__title">
+                <p>E-mail</p>
+              </div>
+              <div class="contacts-form__item__input">
+                <input type="email" placeholder="mail@gmail.com">
+              </div>
+            </div>
+            <div class="contacts-form__item">
+              <div class="contacts-form__item__title">
+                <p>Сообщение</p>
+              </div>
+              <div class="contacts-form__item__input">
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="contacts-form__panel">
+              <button class="contacts-form__panel__button">Отправить</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
